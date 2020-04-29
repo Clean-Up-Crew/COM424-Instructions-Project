@@ -1,0 +1,75 @@
+/*Put grid styles here*/
+
+#page {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {
+	width: 35%;
+	margin-left: 25%;
+	border-radius: 1em;
+	padding: 0px 0px 0px 5px;
+}
+
+nav > ul {
+	padding-inline-start: 5%;
+}
+
+#page_nav > nav > ul > li {
+	display: inline;
+	padding-left: 10px;
+	text-decoration: none;
+}
+
+#narrow_nav > nav > ul > li {
+	display: block;
+	margin-top: 5px;
+	max-width: 50%;
+	background-color: #3672fe;
+	border-radius: 0.5em;
+	padding: 5px 10px 10px 10px;
+}
+
+li > a {
+	color: white;
+	text-align: center;
+	padding-right: 5%;
+}
+
+#page_nav {
+	height: 50px;
+	background-color: #3672FE;
+	padding-top: 1px;
+	border-radius: 1em;
+}
+
+.fixed-navbar {
+	/*position: fixed;
+	border-radius: 1em;
+	top: 0px;
+	min-height: 35px;
+	max-width: 99%;
+	padding-top: 10px;
+	background: #3672fe;
+	z-index: 1;*/
+	min-height: 125px;
+	width: 160px; /* Set the width of the sidebar */
+	position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+	z-index: 1; /* Stay on top */
+	top: 25%;
+	left: 0;
+	background-color: #3672fe; /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 20px;
+}
+
+#narrow_nav.fixed-navbar {
+	width: 170px;
+	background: none;
+}
+
+.fixed-navbar-placeholder {
+	min-height: 35px;
+}

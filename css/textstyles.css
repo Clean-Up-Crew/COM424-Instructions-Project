@@ -1,0 +1,42 @@
+body {
+	font-family: ebrima;
+}
+
+h1 {
+	background-color: #3672FE;
+	color: white;
+	max-width: 100%;
+	border-radius: 20px;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 20px;
+	text-align: center;
+}
+
+section > h2 {
+	background-color: #3672FE;
+	color: white;
+	max-width: 200px;
+	border-radius: 20px;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 15px;
+	text-align: center;
+}
+
+section > h3 {
+	padding-left: 25px;
+}
+
+section > ul {
+	padding-left: 50px;
+}
+
+section > p {
+	margin-top: 3px;
+	margin-bottom: 5px;
+	margin-left: 27%;
+	text-align: center;
+	margin-right: 42%;
+	font-size: 12px;
+}

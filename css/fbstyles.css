@@ -1,0 +1,306 @@
+/*Lucas D'Antonio
+Last Updated: 3/29/2020*/
+
+/* Style for body specifies a background color */
+body {
+	background-color: #FFFFFF;
+}
+
+/* Styles for Mobile Layout */
+img {
+	max-width:100%;
+}
+
+/* Style for the container centers the page and specifies the width */
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for the header specifies top margin, background color, rounded corners, and center align content */
+header, header a {
+	font-family: Verdana, Arial, serif;
+	font-size: 2em;
+	margin-top: 0.2em;
+	background-image: linear-gradient(#0066FF, 50%, #FFFFFF); /*Draws a top to bottom gradient*/
+	border-radius: 0.5em;
+	text-align: center;
+	text-decoration:none;
+}
+
+/* Style for nav specifies text properties */
+nav {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Style specifies padding and margins for unordered list */
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/* Style for nav li specifies the background color, rounded corners,
+removes bullet style, and applies margins and padding for list items
+within the navigation */
+nav li {
+	background-color: #FF6600;
+	border-radius: 1em;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.4em;
+}
+
+/* Style changes navigation link text color to white and
+removes the underline */
+nav li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* Style for the main specifies a block display, text properties, margins, padding, rounded corners, and borders  */
+main {
+	display: block;
+	font-family: Georgia, "Times New Roman", sans-serif;
+	font-size: 1em;
+	margin-top: 0.2em;
+	padding: 0.5em;
+	border-top: solid 0.2em #FFFFFF; 
+	border-bottom: solid 0.2em #FF6600;
+}
+
+/* Style for the footer specifies font size, text alignment, and top margin */
+footer {
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+}
+
+/* Style rule for input and text areas on forms */
+input, textarea {
+	display: block;
+	margin-bottom: 1em;
+	}
+
+
+/* Style rule for label elements on forms */
+label {
+	display: block;
+	}
+
+/* Style displays the mobile class */
+.mobile {
+display: inline;
+}
+
+/* Hide alternate text on mobile platforms*/
+.desktop {
+display: none;
+}
+
+/* Style rule for p elements*/
+div p {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+/*Style rule for sections on mobile viewports*/
+section {
+	padding: 1%;
+	text-align: center;
+}
+
+/*Style rule for articles on mobile viewports*/
+article {
+	border-top: solid 0.2em #FF6600;
+	padding: 2%;
+	margin: 0.5%;
+	text-align: left;
+}
+
+/*Style rule for asides on mobile viewports*/
+aside {
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #FF6600;
+	font-size: 1.25em;
+	margin: 1em;
+	padding: 1em;
+}
+
+/* Style rule for video div */
+.video {
+	text-align: center;
+	padding: 1em;
+}
+
+/* Style rules for video elements */
+video {
+	border: 0.2em solid #FF6600;
+	height: auto;
+	max-width: 100%;
+}
+
+/*Style for tablet*/
+@media screen and (min-width: 481px)
+{
+	/*Makes image smaller and floats it left.*/
+	img {
+		width: 25%;
+		float: left;
+	}
+	
+	/*Specify padding in header*/
+	header p {
+		margin-bottom: 4em;
+		padding-top: 1.5em;
+	}
+	
+	nav li {
+		display: inline;
+		float: left;
+		margin-left: 1%;
+		margin-right: 1%;
+		padding-left: 0;
+		padding-right: 0;
+		width: 23%;
+	}
+	
+	main {
+		clear: left;
+		margin-top: 12em;
+	}
+	/*Hide mobile layout rules*/
+	.mobile {
+		display: none;
+	}
+	/*Display desktop text*/
+	.desktop {
+		display: inline;
+	}
+
+	/* Style rules for sections on tablet and desktop viewports*/	
+	section {
+		background-color: #FF6600;
+	}
+
+	/* Style rules for articles on tablet viewports*/
+	article {
+		background-color: #FFFFFF;
+		border-top: 0;
+		border-radius: 0 3em 3em 3em;
+		margin-bottom: 1em;
+	}
+
+	/* Style rules for asides on tablet viewports*/
+	aside {
+		text-align: center;
+		color: #FF6600;
+		background-color: #FFFFFF;
+		box-shadow: 1em 1em 1em #000000;
+		border-radius: 8em;
+	}
+	
+	/* Style rule for table elements on tablet viewports */
+	table, th, td {
+		border: solid 0.1em #FF6600;
+		border-collapse: collapse;
+		padding: 1em;
+	}
+	
+	/* Style rule for captions on table elements */
+	caption {
+		font-size: 1.5em;
+		padding-bottom: 1em;
+	}
+
+	/* Style rule for label elements  */
+	label {
+		float: left;
+		padding-right: 0.5em;
+		text-align: right;
+		width: 8em;
+	}
+}
+
+/*Styles for Desktop Layout*/
+@media screen and (min-width: 769px) {
+	
+	#container {
+		width: 80%;
+	}
+	
+	nav {
+		margin-top: -5em;
+	}
+	
+	nav ul {
+		margin: 0;
+		padding-left: 0.50%;
+		padding-right: 0.50%;
+	}
+	
+	/*Style sets nav section's background color and layout*/
+	nav li {
+		background-color: #FFFFFF;
+		border-radius: 0;
+		margin-left: 0;
+		margin-right: 0;
+		padding: 0;
+		width: 18%;
+	}
+	
+	/*Sets nav text to orange, displays inline, and provides padding*/
+	nav li a {
+		color: #FF6600;
+		display: inline-block;
+		padding: 0.7em;
+		font-size: 1.25em;
+	}
+	
+	/*Style removes underline on nav links and keeps color orange*/
+	nav li a:link {
+		color: #FF6600;
+	}
+	
+	/*Style causes nav elements to change color and italicize when hovered over*/
+	nav li a:hover {
+		color: #4C1F00;
+		font-style: italic;
+	}
+	
+	/*Style provides formatting for text in main section*/
+	main {
+		border: none;
+		border-radius: 1em;
+		box-shadow: 1em 1em 1em #331400;
+		margin-top: 1em;
+		overflow: auto;
+	}
+	
+	/*Style rules for sections on desktop viewports*/
+	section {
+		float: left;
+		width: 60%;
+	}
+	
+	/* Style rule for asides on desktop viewports*/
+	aside {
+		float: right;
+		width: 25%;
+		background-color: #FF6600;
+		color: #FFFFFF;
+	}
+	
+	/* Style rule for table elements on desktop viewports */
+	table {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1em;
+	}
+}
