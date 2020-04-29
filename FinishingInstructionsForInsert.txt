@@ -1,0 +1,10 @@
+Finishing Instructions for Insert
+
+Facing English side:
+	Vertical Cuts:
+		22p8
+		48p8
+
+	Horizontal Cuts:
+		22p8
+		63p10
